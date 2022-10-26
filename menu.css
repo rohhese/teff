@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-width: 1440px;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.intro a {
+    font-weight: 800;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.logo {
+    width: 631px;
+    height: 665px;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    margin-top: 60px;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.intro__left {
+    position: fixed;
+    background-color: transparent;
+    left: 30px;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.intro__right {
+    position: fixed;
+    background-color: transparent;
+    right: 30px;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    animation-delay: 1.5s;
+
+}
+
+/* main  */
+.imgBlock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 940px;
+    height: 560px;
+}
+
+.contentWrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+.textBlock {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.textLeft {
+    width: 50%;
+}
+
+.textRight {
+    width: 50%;
+}
+
+.textBlock h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.textBlock p {
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.imgBox img {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    max-width: 8;
+}
+.container {
+    position: relative;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: block;
+    height: auto;
+}
+
+.container img {
+    width: 164px;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.overlay p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.eda {
+    position: relative;
+    width: 100%;
+    
+}
+
+.eda img {
+    width: 940px;
+}
+
+.eda h1 {
+    position: absolute;
+    top: 71px;
+    left: 69px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.eda p {
+    position: absolute;
+    top: 182px;
+    left: 69px;
+    background-color: transparent;
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: left;
+    color: white;
+}
+
+.eda h2 {
+    position: absolute;
+    top: 634px;
+    left: 69px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.eda h3 {
+    position: absolute;
+    top: 697px;
+    left: 69px;
+    background-color: transparent;
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: left;
+    color: white;
+}
+
+.eda h4 {
+    position: absolute;
+    top: 1204px;
+    left: 386px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.eda h5 {
+    position: absolute;
+    top: 1267px;
+    left: 386px;
+    background-color: transparent;
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: left;
+    color: white;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
